@@ -2,12 +2,12 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Shop from './pages/Shop';
-import Product from './pages/Product';           // Ensure file name matches import
-import Cart from './pages/Cart';
-import LoginSignup from './pages/LoginSignup';
+import Shop from './Pages/Shop';
+import Product from './Pages/Product';           // Ensure file name matches import
+import Cart from './Pages/Cart';
+import LoginSignup from './Pages/LoginSignup';
 import Footer from './components/Footer/Footer';
-import ShopCategory from './pages/ShopCategory';
+import ShopCategory from './Pages/ShopCategory';
 import men_banner from './assets/banner.jpg';
 import women_banner from './assets/women_banner.avif';
 import kids_banner from './assets/kids_banner.jpg';

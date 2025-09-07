@@ -1,7 +1,7 @@
 // src/pages/ShopCategory.jsx
 import React, { useContext } from 'react';
 import '../CSS/ShopCategory.css';
-import { ShopContext } from '../Context/ShopContext';
+import { ShopContext } from '../Context/ShopContext.jsx';
 import dropdown_icon from '../assets/dropdown_icon.png';
 import Item from '../components/Items/Item.jsx';
 
