@@ -1,0 +1,220 @@
+.cartitems {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.cartitems-format-main {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  border-bottom: 2px solid #ddd;
+  background: #f8f8f8;
+  border-radius: 8px 8px 0 0;
+}
+
+.cartitems-format {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  font-size: 14px;
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s ease;
+}
+
+.cartitems-format:hover {
+  background: #fafafa;
+}
+
+.cartitems-product-icon {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cartitems-quantity {
+  background: #f0f0f0;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: default;
+  text-align: center;
+  min-width: 40px;
+}
+
+.cartitems-remove-icon {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.cartitems-remove-icon:hover {
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+
+.cartitem-down {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* --- Cart Totals + Promo Code in two columns --- */
+.cartitem-down {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+}
+
+/* Cart Totals Left Side */
+.cartitem-total {
+  flex: 1;
+  max-width: 50%;
+  padding: 25px;
+  background: #f9f9f9;
+  border: 2px solid #eee;
+  border-radius: 10px;
+}
+
+.cartitem-total h1 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #222;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.cartitem-total-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  font-size: 16px;
+  color: #444;
+}
+
+.cartitem-total-item:last-of-type {
+  border-top: 2px solid #ddd;
+  padding-top: 12px;
+  font-weight: 700;
+  color: #000;
+}
+
+.cartitem-total button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px 0;
+  border: none;
+  border-radius: 6px;
+  background: #ff4747;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.cartitem-total button:hover {
+  background: #e03a3a;
+}
+
+/* Promo Code Right Side */
+.cartitem-promocode {
+  flex: 1;
+  max-width: 50%;
+  padding: 25px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.cartitem-promocode p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.cartitem-promobox {
+  display: flex;
+  gap: 10px;
+}
+
+.cartitem-promobox input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+.cartitem-promobox button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  background: #333;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.cartitem-promobox button:hover {
+  background: #000;
+}
+
+
+@media (max-width: 768px) {
+  .cartitems-format-main,
+  .cartitems-format {
+    display: block;
+  }
+
+  .cartitems-format p,
+  .cartitems-format img,
+  .cartitems-format button {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .cartitems-quantity {
+    width: 50px;
+    text-align: center;
+  }
+
+  .cartitem-down {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cartitem-total, .cartitem-promocode {
+    width: 100%;
+  }
+
+  .cartitem-promobox input {
+    width: 70%;
+    margin-bottom: 10px;
+  }
+
+  .cartitem-promobox button {
+    width: 30%;
+  }
+}

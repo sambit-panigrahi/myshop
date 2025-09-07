@@ -1,0 +1,72 @@
+/* NewsLetter.css */
+
+.newsletter {
+  background: #f5f5f5;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 15px;
+  max-width: 700px;
+  margin: 40px auto;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.newsletter h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.newsletter p {
+  font-size: 1rem;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.newsletter div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.newsletter input[type="email"] {
+  padding: 12px 15px;
+  width: 250px;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.newsletter input[type="email"]:focus {
+  border-color: #ff4d4d;
+}
+
+.newsletter button {
+  padding: 12px 25px;
+  background: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.newsletter button:hover {
+  background: #e04343;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .newsletter {
+    padding: 40px 15px;
+  }
+
+  .newsletter input[type="email"] {
+    width: 100%;
+  }
+}

@@ -1,0 +1,44 @@
+.bredcrums {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #555;
+  font-family: 'Poppins', sans-serif;
+  margin: 20px 40px;
+}
+
+.bredcrums img {
+  width: 12px;
+  height: 12px;
+  opacity: 0.6;
+}
+
+.bredcrums span {
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.bredcrums span:hover {
+  color: #e63946; /* highlight color */
+}
+/* Mobile responsiveness for breadcrumbs */
+@media (max-width: 768px) {
+  .bredcrums {
+    flex-direction: row; /* keep in a row */
+    flex-wrap: wrap;     /* wrap if too long */
+    gap: 5px;
+    font-size: 12px;
+    margin: 10px 10px;
+  }
+
+  .bredcrums img {
+    width: 10px;
+    height: 10px;
+    opacity: 0.6;
+  }
+
+  .bredcrums span {
+    font-size: 12px;
+  }
+}

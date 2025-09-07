@@ -1,0 +1,53 @@
+.relatedProduct {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.relatedProduct h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.relatedproduct-item {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0 10px;
+}
+
+/* Optional: Add hover effect to Item cards */
+.relatedproduct-item .item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.relatedproduct-item .item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Mobile responsiveness for Related Products */
+@media (max-width: 768px) {
+  .relatedProduct {
+    padding: 20px 10px;
+  }
+
+  .relatedProduct h1 {
+    font-size: 1.5rem;   /* smaller heading */
+    margin-bottom: 20px;
+  }
+
+  .relatedproduct-item {
+    grid-template-columns: 1fr; /* stack items vertically */
+    gap: 15px;
+    padding: 0 5px;
+  }
+
+  .relatedproduct-item .item {
+    max-width: 100%;  /* full width on mobile */
+  }
+}

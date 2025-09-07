@@ -1,0 +1,44 @@
+.popular-item {
+  display: flex;
+  flex-wrap: wrap;            /* wrap items on smaller screens */
+  justify-content: center;    /* center align */
+  gap: 20px;                  /* space between items */
+  margin-top: 20px;
+  padding: 10px;
+  margin-top: 0;
+  
+ 
+}
+.popular {
+  text-align: center; 
+  margin-top: 0%;
+  padding: 30px ; 
+}
+.popular h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #4a4a4a;
+  margin-bottom: 20px; 
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  
+}
+
+/* Mobile responsiveness for Popular Items */
+@media (max-width: 768px) {
+  .popular-item {
+    flex-direction: column;   /* stack items vertically */
+    align-items: center;
+    gap: 15px;                /* reduce gap */
+    padding: 10px 5px;
+  }
+
+  .popular {
+    padding: 20px 10px;
+  }
+
+  .popular h1 {
+    font-size: 22px;          /* smaller heading */
+    margin-bottom: 15px;
+  }
+}

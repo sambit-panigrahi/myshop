@@ -1,0 +1,63 @@
+
+
+
+
+/* Description.css */
+
+.descriptionbox {
+  width: 100%;
+  padding: 20px;
+  background-color: #fdfdfd;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.descriptionbox-navigator {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.descriptionbox-navbox,
+.descriptionbox-nav-box {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 16px;
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.descriptionbox-navbox:hover,
+.descriptionbox-nav-box:hover {
+  background-color: #f0f0f0;
+}
+
+.descriptionbox-description {
+  margin-top: 12px;
+  padding: 16px;
+  background-color: #fafafa;
+  border-left: 4px solid #0078d4;
+  border-radius: 6px;
+}
+
+.descriptionbox-description p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .descriptionbox {
+    padding: 20px 15px;
+  }
+
+  .descriptionbox-description p {
+    font-size: 0.9rem;
+  }
+}
