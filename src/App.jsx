@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Shop from './Pages/Shop';
-import Product from './Pages/Product';           // Ensure file name matches import
+import Product from './Pages/Product.jsx';           // Ensure file name matches import
 import Cart from './Pages/Cart';
 import LoginSignup from './Pages/LoginSignup';
 import Footer from './components/Footer/Footer';
