@@ -1,7 +1,7 @@
 // src/App.jsx
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navbar from './components/navbar';
+import Navbar from './components/Navbar';
 import Shop from './pages/Shop';
 import Product from './pages/Product';           // Ensure file name matches import
 import Cart from './pages/Cart';
