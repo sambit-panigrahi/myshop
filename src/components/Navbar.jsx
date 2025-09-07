@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import './navbar.css';
+import './Navbar.css';
 import logo from '../assets/logo.png';
 import cartLogo from '../assets/cartLogo.webp';
 import { Link } from 'react-router-dom';
