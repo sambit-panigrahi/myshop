@@ -2,8 +2,8 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Shop from '../src/Pages/Shop';
-import Product from '../src/Pages/Product';           // Ensure file name matches import
+import Shop from './Pages/Shop';
+import Product from './Pages/Product';
 import Cart from './Pages/Cart';
 import LoginSignup from './Pages/LoginSignup';
 import Footer from './components/Footer/Footer';

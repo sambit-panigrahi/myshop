@@ -45,7 +45,7 @@ function Navbar() {
         </Link>
 
         <Link to="/cart" className="cart-container">
-          <img src={cartLogo} alt="cart" height="80px"/>
+          <img src={cartLogo} alt="cart" />
           {totalItems > 0 && (
             <div className="nav-cart-count">{totalItems}</div>
           )}

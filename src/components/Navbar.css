@@ -81,15 +81,16 @@
   justify-content: center;
 }
 
-@media (max-width: 768px) {
+
+@media( max-width: 768px) {
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     padding: 10px 20px;
   }
 
   .nav-menu {
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
     width: 100%;
   }
@@ -105,8 +106,7 @@
   }
 
   .nav-cart-count {
-    top: -5px;
-    right: 5px;
+    top: 5px;
     width: 16px;
     height: 16px;
     font-size: 10px;
