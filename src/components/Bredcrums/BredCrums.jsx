@@ -3,7 +3,7 @@ import React from 'react';
 import './BredCrums.css';
 import arrow_icon from '../../assets/arrow_icon.png';
 
-const Bredcrums = ({ product }) => {
+const BredCrums = ({ product }) => {
   if (!product) return null;
   return (
     <div className='bredcrums'>
@@ -14,4 +14,4 @@ const Bredcrums = ({ product }) => {
     </div>
   );
 };
-export default Bredcrums;
+export default BredCrums;
