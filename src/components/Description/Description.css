@@ -1,7 +1,4 @@
 
-
-
-
 /* Description.css */
 
 .descriptionbox {
@@ -54,10 +51,32 @@
 
 @media (max-width: 768px) {
   .descriptionbox {
-    padding: 20px 15px;
+    padding: 16px 12px;
+    border-radius: 6px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.04);
+  }
+
+  .descriptionbox-navigator {
+    gap: 12px;
+  }
+
+  .descriptionbox-navbox,
+  .descriptionbox-nav-box {
+    font-size: 1rem;
+    padding: 10px 14px;
+    border-radius: 5px;
+  }
+
+  .descriptionbox-description {
+    margin-top: 10px;
+    padding: 14px;
+    border-left: 3px solid #0078d4;
+    border-radius: 5px;
   }
 
   .descriptionbox-description p {
     font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
   }
 }

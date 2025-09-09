@@ -60,32 +60,3 @@
   padding: 24px 16px;
   justify-items: center;
 }
-@media (max-width: 768px) {
-  .home-products-grid {
-    grid-template-columns: 1fr; /* stack one product per row */
-    gap: 15px;
-    padding: 16px 10px;
-  }
-
-  .item {
-    max-width: 100%; /* full width */
-    padding: 12px;
-  }
-
-  .item img {
-    height: auto; /* scale image */
-    max-height: 200px;
-  }
-
-  .item p {
-    font-size: 14px;
-  }
-
-  .item-price-new {
-    font-size: 16px;
-  }
-
-  .item-price-old {
-    font-size: 14px;
-  }
-}

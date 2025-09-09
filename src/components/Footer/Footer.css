@@ -81,12 +81,49 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .footer-links {
-    flex-direction: column;
-    gap: 15px;
+  .footer {
+    padding: 30px 15px;
+    text-align: center;
   }
 
+  .footer-logo {
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .footer-logo img {
+    height: 40px;
+  }
+
+  .footer-logo p {
+    font-size: 1.2rem;
+  }
+
+  .footer-links li {
+  font-size: 0.95rem;
+  padding: 5px 10px;
+  white-space: nowrap;
+}
+
   .fotter-social-icon {
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 15px 0;
+  }
+
+  .fotter-icon-container {
+    padding: 8px;
+  }
+
+  .fotter-icon-container img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .footer-copyright {
+    font-size: 0.8rem;
+    padding-top: 10px;
+    margin-top: 15px;
   }
 }

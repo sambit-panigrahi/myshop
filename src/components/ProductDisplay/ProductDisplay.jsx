@@ -46,7 +46,6 @@ const ProductDisplay =(props) =>{
               It allows users to browse products by Men, Women, and Kids categories.
               Each product has a dedicated page with images, prices, and details.
               Includes a shopping cart with add/remove functionality.
-              Clean, responsive, and user-friendly design for a smooth shopping experience.
             </div>
             <div className="productdisplay-right-size">
               <h1>Select Size</h1>

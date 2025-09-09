@@ -82,33 +82,62 @@
 }
 
 
-@media( max-width: 768px) {
+@media (max-width: 768px) {
   .navbar {
     flex-direction: row;
-    align-items: flex-start;
-    padding: 10px 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    gap: 10px;
+  }
+
+  .nav-logo img {
+    height: 50px;
   }
 
   .nav-menu {
+    display: flex;
     flex-direction: row;
     gap: 15px;
-    width: 100%;
+    flex: 1;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
   }
 
+  .nav-menu li {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .nav-menu li:hover {
+    font-size: 12px; 
+    font-weight: bold; 
+  }
+
+
+
   .nav-login {
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-login button {
+    padding: 6px 10px;
+    font-size: 13px;
   }
 
   .cart-container img {
-    height: 40px;
+    height: 30px;
   }
 
   .nav-cart-count {
-    top: 5px;
-    width: 16px;
-    height: 16px;
+    top: 3px;
+    right: 23px;
+    width: 14px;
+    height: 14px;
     font-size: 10px;
   }
 }

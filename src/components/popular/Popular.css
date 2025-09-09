@@ -27,18 +27,40 @@
 /* Mobile responsiveness for Popular Items */
 @media (max-width: 768px) {
   .popular-item {
-    flex-direction: column;   /* stack items vertically */
-    align-items: center;
-    gap: 15px;                /* reduce gap */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
     padding: 10px 5px;
   }
 
+  .popular-item > div {
+    flex: 0 0 48%; /* roughly 2 items per row with gap */
+    box-sizing: border-box;
+    height: 220px; /* adjust as needed */
+    overflow: hidden;
+    padding: 10px;
+
+  }
+    .popular-item > div img {
+    max-height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .popular-item > div h3,
+  .popular-item > div p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+
+
   .popular {
-    padding: 20px 10px;
+    padding: 10px 10px;
   }
 
   .popular h1 {
-    font-size: 22px;          /* smaller heading */
+    font-size: 22px;
     margin-bottom: 15px;
   }
 }

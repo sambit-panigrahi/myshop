@@ -7,6 +7,7 @@ import NewCollection from "../NewCollection/NewCollection";
 import NewsLetter from "../components/NewsLetter/NewsLetter";
 import { ShopContext } from "../Context/ShopContext";
 import Item from "../components/Items/Item";
+import  './Shop.css'
 
 function Shop() {
   const { all_product } = useContext(ShopContext);
@@ -18,7 +19,7 @@ function Shop() {
       <Offers />
       <NewCollection />
       {/* Quick sanity check grid to show EVERYTHING */}
-      <div style={{display:'grid', gridTemplateColumns:'repeat(auto-fill, minmax(180px, 1fr))', gap:16, padding:'24px 16px'}}>
+      <div className="shop-grid">
         {all_product.map((p) => (
           <Item
             key={p.id}
