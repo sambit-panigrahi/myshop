@@ -1,43 +1,52 @@
+/* Navbar Container */
 .navbar {
   width: 100%;
   padding: 20px 50px;
   background: linear-gradient(90deg, #6a11cb, #2575fc);
   display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
   box-sizing: border-box;
+  flex-wrap: wrap;
+  overflow-x: hidden;
 }
 
+/* Logo */
+.nav-logo {
+  flex-shrink: 0;
+}
 .nav-logo img {
-  height: 100px;
+  height: 80px;
+  margin-left: 0;
 }
 
 /* Menu */
 .nav-menu {
   list-style: none;
   display: flex;
-  gap: 80px;
+  gap: 8px;
   margin: 0;
   padding: 0;
+  flex-shrink: 1;
+  min-width: 0;
 }
-
 .nav-menu li {
   position: relative;
   cursor: pointer;
   font-size: 16px;
-  transition: all 0.3s ease-in-out; 
   color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-
-
 
 /* Login + Cart */
 .nav-login {
   display: flex;
   align-items: center;
-  gap: 20px;                 
+  gap: 10px;
+  flex-shrink: 0;
 }
-
 .nav-login button {
   padding: 8px 16px;
   background: black;
@@ -47,7 +56,7 @@
   cursor: pointer;
 }
 .nav-login button:hover {
-  background: linear-gradient(90deg, #ff512f, #dd2476); 
+  background: linear-gradient(90deg, #ff512f, #dd2476);
   color: white;
 }
 
@@ -56,12 +65,11 @@
   position: relative;
   display: flex;
   align-items: center;
+  flex-shrink: 0;
 }
-
 .cart-container img {
   height: 50px;
 }
-
 .nav-cart-count {
   position: absolute;
   top: 8px;
@@ -78,7 +86,7 @@
   justify-content: center;
 }
 
-
+/* Responsive for Small Screens */
 @media (max-width: 320px) {
   .navbar {
     display: flex;
@@ -86,13 +94,15 @@
     align-items: center;
     justify-content: space-between;
     padding: 4px 6px;
-    gap: 4px;
-    flex-wrap: nowrap;
-    overflow-x: auto;
+    gap: 6px;
+    flex-wrap: nowrap;       /* 🔑 force one row */
+    overflow-x: auto;        /* 🔑 allow horizontal scroll if overflow */
+    white-space: nowrap;     /* 🔑 prevent text wrap */
   }
 
-  .nav-logo img {
-    height: 30px;
+  .nav-logo img,
+  .cart-container img {
+    height: 20px;
     flex-shrink: 0;
   }
 
@@ -100,22 +110,19 @@
     display: flex;
     flex-direction: row;
     gap: 6px;
-    margin: 0;
-    padding: 0;
+    flex: 1;
     flex-shrink: 1;
     overflow-x: auto;
+    white-space: nowrap;
   }
 
   .nav-menu li {
     font-size: 11px;
-    white-space: nowrap;
-    color: white;
+    flex-shrink: 0;   /* prevent squashing */
   }
 
   .nav-login {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     gap: 4px;
     flex-shrink: 0;
   }
@@ -124,17 +131,7 @@
     padding: 4px 6px;
     font-size: 10px;
     border-radius: 4px;
-  }
-
-  .cart-container img {
-    height: 22px;
-  }
-
-  .nav-cart-count {
-    top: 2px;
-    right: 12px;
-    width: 12px;
-    height: 12px;
-    font-size: 8px;
+    white-space: nowrap;
   }
 }
+
