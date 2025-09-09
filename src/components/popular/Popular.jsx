@@ -9,8 +9,8 @@ function Popular() {
 
   return (
     <div>
-        <h1 className="popular">POPULAR IN WOMEN</h1>
-    <div className="popular-item">
+      <h1 className="popular">POPULAR IN WOMEN</h1>
+      <div className="popular-item">
         
         {data_product.map((item, i) => (
           <Item
